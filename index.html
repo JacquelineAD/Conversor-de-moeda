@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertendo moedas</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    
+  </head>
+  <body>
+    <img
+      class="logo"
+      src="img/Icone.png"
+      alt="Icone ilustração cédula e diamantes"
+    />
+
+    <div class="container-principal">
+      <label>
+        <span>Converter de</span>
+        <select>
+            <option>R$ Real Brasileiro</option>
+        </select>
+    </label>
+
+    <label>
+        <span>Converter para</span>
+        <select id="converterPara">
+            <option value="dolar">US$ Dolar</option>
+            <option value="yuan">元 Yuan</option>
+            <option value="won">₩ Won</option>
+            <option value="iene">¥ Iene</option>
+        </select>
+    </label>
+    <label>
+        <span>Valor</span>
+        <input class="input-valor" id="inputDeValor" placeholder="R$ 0,00">
+    </label>
+    <button class="btn-conversor" id="btn">Converter</button>
+
+    <section class="valoresconvertidos">
+
+        <div class="infos-de-conversao">
+            <img src="img/brasil.png" alt="moeda-a-converter">
+            <p>Real Brasileiro</p>
+            <p id="valorEmReal">R$ 0,00</p>
+        </div>
+
+        <img class="seta" src="img/seta.png" alt="ilustração seta">
+
+        <div class="infos-de-conversao">
+            <img src="img/eua.png" id="imagem-moeda" alt="moeda-convertida">
+            <p id="nome-moeda">Dólar Americano</p>
+            <p id="ValorConvertidoDolar">US$ 0,00</p>
+        </div>
+
+    </section>
+
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+:root{
+--fonte:'Roboto', sans-serif;
+--cortexto:#000000;
+--corbotao:#ffbbbb;
+--fundobranco:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: var(--fonte);
+    color: var(--cortexto);
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-image: url('../img/porquinho.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+    padding:15px 0px;  
+}
+
+.container-principal{
+    background-color: var(--fundobranco);
+    width: 300px;
+    height: 650px;
+    border: 3px solid var(--corbotao);
+    border-radius: 10px;
+    
+}
+
+span{
+    color: var(--cortexto);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    padding-top: 20px;
+    margin-left: 30px;
+    
+   
+}
+
+select{
+    height: 40px;
+    font-size: 18px;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: 2px solid var(--corbotao);
+
+}
+
+option{
+    font-size: 18px;
+}
+
+.input-valor{
+    height: 40px;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: 2px solid var(--corbotao);
+    font-size: 18px;
+
+}
+
+.btn-conversor{
+    background-color: var(--corbotao);
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    margin: 15px 25px;
+    padding: 15px;
+    font-size: 23px;
+    color: var(--fundobranco);
+    font-weight: 700;
+
+}
+
+.btn-conversor:hover{
+    color: var(--corbotao);
+    background-color: var(--fundobranco);
+    border: 2px solid var(--corbotao);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.valoresconvertidos{
+    margin: 15px auto;
+    padding: 5px;
+    width: 90%;
+    height: 270px;
+    border: 2px solid var(--corbotao);
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos-de-conversao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.seta{
+    margin: 15px;
+}
+
